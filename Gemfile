@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 gem 'rails', '4.1.1'
 gem 'sass-rails', '~> 4.0.3'
@@ -21,4 +22,9 @@ group :development, :test do
   gem 'ffaker'
   gem 'shoulda-matchers'
   gem 'pry'
+end
+
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
