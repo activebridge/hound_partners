@@ -1,6 +1,6 @@
 defaults: &defaults
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   reconnect: true
   pool: 5
   username: root
