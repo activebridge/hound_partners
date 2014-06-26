@@ -28,11 +28,12 @@ table td.result {
   display: table;
   margin: 3px 28px 20px;
   width: 1230px;
+  margin: 0 auto;
 }
 
 .left-table, .right-table {
   background: #fff;
   padding: 10px 10px 0;
-  width: 49.5%;
+  width: 49.7%;
   color: #000;
 }
