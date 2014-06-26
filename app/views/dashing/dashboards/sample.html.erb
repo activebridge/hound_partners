@@ -5,6 +5,9 @@
 
 <div class="gridster">
   <ul>
+    <li data-row='1' data-col='1' data-sizex='2' data-sizey='1'>
+      <div id="pie-donut" style="width: 610px; height: 360px; background: #ccc;"></div>
+    </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div id="line-basic" style="width: 610px; height: 360px; background: #ccc;"></div>
     </li>
@@ -72,5 +75,4 @@
       <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
     </li>
   </ul>
-  <center><div style="font-size: 12px">Try this: curl -X PUT 'http://<%= request.host %>:<%= request.port %>/dashing/widgets/welcome' -d "widget[text]=Dashing is awesome"</div></center>
 </div>
