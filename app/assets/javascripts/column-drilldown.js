@@ -72,14 +72,14 @@ $(function () {
                   type: 'column'
               },
               title: {
-                  text: 'Browser market shares. November, 2013'
+                  text: 'Decision List. 2013 year'
               },
               xAxis: {
                   type: 'category'
               },
               yAxis: {
                   title: {
-                      text: 'Total percent market share'
+                      text: 'Total percent'
                   }
               },
               legend: {
@@ -101,7 +101,7 @@ $(function () {
               },
 
               series: [{
-                  name: 'Brands',
+                  name: 'Types',
                   colorByPoint: true,
                   data: brandsData
               }],
