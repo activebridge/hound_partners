@@ -1,13 +1,13 @@
 # Use this hook to configure Dashing bahaviors.
 Dashing.configure do |config|
   # Scheduler instance.
-  # config.scheduler = ::Rufus::Scheduler.new
+  config.scheduler = ::Rufus::Scheduler.new
 
   # Redis credentials.
   # See https://devcenter.heroku.com/articles/redistogo to configure redis for heroku.
    config.redis_host     = 'soldierfish.redistogo.com'
-   config.redis_port     = '9702'
-   config.redis_password = 'ee67ec0af1384d38384ae35293bb2460'
+   config.redis_port     = '9737'
+   config.redis_password = '87f72aa3e17866f21bc25ca422356de7'
 
   # Redis namespace when pushing new data.
   # config.redis_namespace = 'dashing_events'
@@ -31,7 +31,7 @@ Dashing.configure do |config|
   # config.widgets_css_path   = 'app/assets/stylesheets/dashing'
 
   # rufus-scheduler worker path
-  # config.jobs_path = -> { Rails.root.join('app', 'jobs') }
+  config.jobs_path = -> { Rails.root.join('app', 'jobs') }
 
   # Engine path to use for accessing engine's routes.
   # Ex: http://your_app/dashing/dashboard/my_dashboard_name
