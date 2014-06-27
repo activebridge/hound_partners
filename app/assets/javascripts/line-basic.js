@@ -1,7 +1,7 @@
 $(function () {
   $('#line-basic').highcharts({
       title: {
-          text: 'Monthly Average Temperature',
+          text: 'Analysts',
           x: -20 //center
       },
       xAxis: {
@@ -10,7 +10,7 @@ $(function () {
       },
       yAxis: {
           title: {
-              text: 'Temperature (°C)'
+              text: 'Time (hours)'
           },
           plotLines: [{
               value: 0,
@@ -19,7 +19,7 @@ $(function () {
           }]
       },
       tooltip: {
-          valueSuffix: '°C'
+          valueSuffix: 'hours'
       },
       legend: {
           layout: 'vertical',
@@ -28,17 +28,17 @@ $(function () {
           borderWidth: 0
       },
       series: $.randomize([{
-          name: 'Tokyo',
-          data: $.randomize([7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6])
+          name: 'John Doe',
+          data: $.randomize([70, 69, 95, 145, 102, 115, 152, 165, 133, 143, 139, 96])
       }, {
-          name: 'New York',
-          data: $.randomize([-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5])
+          name: 'Jane Doe',
+          data: $.randomize([20, 80, 57, 113, 170, 120, 148, 141, 101, 141, 86, 25])
       }, {
-          name: 'Berlin',
-          data: $.randomize([-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0])
+          name: 'John Smith',
+          data: $.randomize([90, 60, 35, 84, 135, 170, 186, 179, 143, 90, 39, 10])
       }, {
-          name: 'London',
-          data: $.randomize([3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8])
+          name: 'Analyst 4',
+          data: $.randomize([39, 42, 57, 85, 119, 152, 170, 166, 142, 103, 66, 48])
       }])
   });
 });
