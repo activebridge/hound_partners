@@ -1,6 +1,6 @@
 current_valuation = 0
 
-Dashing.scheduler.every '10s', first_in: 1.second.since do
+Dashing.scheduler.every '10s' do
   last_valuation = current_valuation
   current_valuation = rand(100)
 
