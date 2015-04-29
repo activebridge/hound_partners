@@ -1,28 +1,21 @@
-== README
+== Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a small application that uses dashing-rails[https://github.com/gottfrois/dashing-rails]
 
-Things you may want to cover:
+Dashing is a Rails engine that lets you build beautiful dashboards.
 
-* Ruby version
+Check out a demo over here[http://dashingdemo.herokuapp.com/sample]. Here's another one[http://dashingdemo.herokuapp.com/sampletv], optimized for 1080p screens.
 
-* System dependencies
+Key features:
 
-* Configuration
+* Use premade widgets, or fully create your own with scss, html, and coffeescript.
+* Widgets harness the power of data bindings to keep things DRY and simple. Powered by batman.js.
+* Use the API to push data to your dashboards, or make use of a simple ruby DSL for fetching data.
+* Drag & Drop interface for re-arranging your widgets.
+* Host your dashboards on Heroku in less than 30 seconds.
 
-* Database creation
+== Browser Compatibility
 
-* Database initialization
+Tested in Chrome, Safari 6+, and Firefox 15+.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Does not work in Internet Explorer because it relies on Server Sent Events[http://www.html5rocks.com/en/tutorials/eventsource/basics/].
